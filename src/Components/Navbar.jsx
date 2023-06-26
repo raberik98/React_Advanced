@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <ul>
-          <li>
+        <ul className="listOne">
+          <li >
             <Link to="/">Ladning Page</Link>
           </li>
           <li>
