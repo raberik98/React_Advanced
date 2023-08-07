@@ -1,12 +1,15 @@
-
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 export default function AboutUs() {
     
-    return (
+    return(
         <>
-            <h1>About us</h1>
-            <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
-        </>
+        <Navbar />
+        <main>
+          <h1>About us page!</h1>
+        </main>
+        <Footer />
+      </>
     )
-
 }

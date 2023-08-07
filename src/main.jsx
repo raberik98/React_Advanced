@@ -2,24 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import LandingPage from './Views/LandingPage.jsx'
-import AboutUs from "./Views/AboutUs.jsx";
-import Items from './Views/Items.jsx';
-
-import Navbar from './Components/Navbar.jsx';
-
 import "./assets/scss/style.scss"
+
+import LandingPage from './Views/LandingPage.jsx'
+import AboutUs from './Views/AboutUs';
+import Info from './Views/Info';
+import NotFound from './Views/NotFound';
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Navbar/> }>
           <Route path="/" element={<LandingPage />}/>
-          <Route path="/info" element={<AboutUs />}/>
-          <Route path="/items/:id/:allat/:miteszik" element={<Items />}/>
-        </Route>
+          <Route path="/about-us" element={<AboutUs />}/>
+          <Route path="/info/:id/:animal/" element={<Info />}/>
+          <Route path="*" element={<NotFound />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

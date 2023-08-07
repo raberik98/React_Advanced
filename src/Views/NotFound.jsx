@@ -1,17 +1,14 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
-function LandingPage() {
-
+export default function NotFound() {
   return (
     <>
       <Navbar />
       <main>
-        <h1>Landing page!</h1>
+        <h1>404 not found!</h1>
       </main>
       <Footer />
     </>
   );
 }
-
-export default LandingPage;
