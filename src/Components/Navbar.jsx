@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { getOneUser } from "../assets/services/user";
 
 export default function Navbar() {
   return (
